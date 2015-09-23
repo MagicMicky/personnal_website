@@ -1,0 +1,11 @@
+<div class="container centered-children">
+			<div class="heading text-center">
+				<!-- Heading -->
+				<h2>{{model.title}}</h2>
+				<p class="text-white ">{{{model.text}}}</p>
+			</div>
+			{{#each model.projects  as |current|}}
+				{{portfolio-project model=current}}
+			{{/each}}
+
+</div>

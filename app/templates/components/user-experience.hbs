@@ -1,0 +1,10 @@
+<div class="heading text-center">
+	<!-- Heading -->
+	<h2>{{model.title}}</h2>
+	<p>{{{model.text}}}</p>
+</div>
+<div id="timeline">
+	{{#each model.timeline as |current|}}
+		{{timeline-item model=current}}
+	{{/each}}
+</div>

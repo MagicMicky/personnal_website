@@ -1,0 +1,11 @@
+<div class="heading text-center">
+	<!-- Heading -->
+	<h2>{{model.title}}</h2>
+	<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>-->
+</div>
+<div class="row">
+	<!-- item -->
+	{{#each model.skills as |current|}}
+		{{skill-item model=current}}
+	{{/each}}
+</div>

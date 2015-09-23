@@ -1,0 +1,7 @@
+<div class="timeline-badge">
+	<span class="timeline-balloon-date-day">{{model.month}}</span>
+	<span class="timeline-balloon-date-month">{{model.year}}</span>
+</div>
+{{#each model.events as |current|}}
+	{{timeline-event model=current}}
+{{/each}}
