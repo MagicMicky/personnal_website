@@ -1,0 +1,48 @@
+timeline cf : http://www.webonise.co.uk/resume
+
+Pour chaque item de la timeline/ ou pour chaque projet ? les technos utilisés en picto avec hover pour avoir la techno.
+
+Stage :
+ - nodejs
+ - postgres
+ - mongo
+ - nginx
+ - bash
+
+Popcorn :
+ - Android
+ - Java
+ - Material design
+ - Google Apps
+
+Projet tut insa :
+ - Android
+ - raspberry
+ - Github
+
+HabitRPG
+ - Android
+ - Gradle
+ - Github
+ PTUT+=
+ - Cardboard
+
+MareUrSport
+ - Android
+ - Database
+
+
+INSA :
+ - Java
+ - mysql
+ - Debian
+ - Sécurité
+ - Electronique (BE integration)
+ - ocaml
+
+IUT :
+ - Java
+ - C
+ - mysql
+ - C++
+ - Réseau?

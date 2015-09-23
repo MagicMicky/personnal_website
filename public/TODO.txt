@@ -1,0 +1,18 @@
+ - Title (Mickael Goubin) : trouver police plus originale ?
+ - Citation :
+ 	Autre chose que du bullshit
+ - Timeline
+ 	+ Material design.
+ 	Rajouter les photos liées au projets ? Liens.
+
+ - Project :
+ 	Trouver des vrai images
+ 	background issue
+ 	Clic sur projet = redirect ou popup.
+ 		Popup ca serait cool pour donner plus d'infos.
+ 	Clic = ripple.
+
+
+ - contact = photos + liens partout.
+
+ - Ou mettre les liens fb/twitter/etc. ?
