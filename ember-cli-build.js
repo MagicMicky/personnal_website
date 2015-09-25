@@ -6,7 +6,6 @@ module.exports = function(defaults) {
     // Add options here
   });
   app.import('vendor/js/modernizr-latest.js');
-  app.import('vendor/js/jquery-1.8.2.min.js');
   app.import('vendor/js/jquery.isotope.min.js');
   app.import('vendor/js/jquery.nav.js');
   app.import('vendor/js/jquery.cslider.js');
@@ -15,7 +14,6 @@ module.exports = function(defaults) {
   // app.import('vendor/owl-carousel/owl.carousel.js');
   // app.import('vendor/owl-carousel/owl.carousel.css');
   // app.import('vendor/owl-carousel/owl.theme.css');
-  app.import('vendor/js/custom.js');
   app.import('vendor/css/da-slider.css');
   app.import('vendor/css/bootstrap.min.css');
   app.import('vendor/css/styles.css');
