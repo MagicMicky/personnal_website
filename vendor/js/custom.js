@@ -49,26 +49,6 @@ var customScripts = {
         // fancybox
         $(".fancybox").fancybox();
     },
-    onePageNav: function () {
-
-        $('#mainNav').onePageNav({
-            currentClass: 'active',
-            changeHash: false,
-            scrollSpeed: 950,
-            scrollThreshold: 0.2,
-            filter: '',
-            easing: 'swing',
-            begin: function () {
-                //I get fired when the animation is starting
-            },
-            end: function () {
-                //I get fired when the animation is ending
-            },
-            scrollChange: function ($currentListItem) {
-                //I get fired when you enter a section and I pass the list item of the section
-            }
-        });
-    },
     slider: function () {
         $('#da-slider').cslider({
             autoplay: true,
@@ -95,12 +75,8 @@ var customScripts = {
         });
     },
     init: function () {
-        customScripts.onePageNav();
         customScripts.profile();
         customScripts.fancybox();
-        customScripts.slider();
-        customScripts.owlSlider();
-        customScripts.bannerHeight();
     }
 }
 $('document').ready(function () {
