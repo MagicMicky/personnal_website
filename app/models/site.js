@@ -1,4 +1,4 @@
-import DS from 'ember-data'
+import DS from 'ember-data';
 var Site = DS.Model.extend({
 	nav: DS.attr(),
 	intro: DS.attr(),
@@ -158,4 +158,4 @@ Site.reopenClass({
 		"motdelafin": "Bye bye ! - <em>Mickael</em"
 	}]
 });
-export default Site
+export default Site;

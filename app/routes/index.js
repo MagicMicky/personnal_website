@@ -1,5 +1,7 @@
+import Ember from 'ember';
+
 export default Ember.Route.extend({
   model() {
-    return this.store.find('site', 1);
-  }
+    return this.store.findRecord('site', 1);
+  },
 });
