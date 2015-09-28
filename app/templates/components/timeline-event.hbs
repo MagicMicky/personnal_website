@@ -5,7 +5,7 @@
 			<li><span class="causale">{{{model.text}}}</span></li>
 			<li class="badges">
 				{{#each model.badges as |current|}}
-					<i {{bind-attr class=':fa current'}}></i>
+					<i {{bind-attr class=':fa current.icon'}} data-tooltip='{{current.title}}' ></i>
 				{{/each}}
 			</li>
 		</ul>

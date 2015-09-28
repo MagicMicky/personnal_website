@@ -11,7 +11,7 @@ var Site = DS.Model.extend({
 });
 Site.reopenClass({
 	FIXTURES: [{
-		"id":1,
+		"id": 1,
 		"nav": [{
 			"link": "home",
 			"text": "Acceuil"
@@ -74,7 +74,16 @@ Site.reopenClass({
 					"isScholar": false,
 					"title": "Developpeur web (intern) - <strong>Payname</strong>",
 					"text": "Lors de ma 2<sup>ème</sup> année du cycle d'ingénieur de l'INSA de Toulouse, j'ai eu l'occasion de faire un stage dans la startup Payname. Payname, jeune fintech, facilitant le paiement entre particulier, avait décider de changer la totalité de leurs services. J'ai donc pu développer le module faisant <strong>l'intermédiaire</strong> entre les différents prestataire de paiements et notre services. Je me suis ainsi plongés dans les tréfonds des virements et prélèvements <strong>SEPA</strong> et de la gestion du <strong>3D Secure</strong> par les banques. Au travers de ce stage, j'ai aussi pu m'impliquer dans la <strong>mise en production</strong> de la nouvelle version du site web.",
-					"badges": ["icon-nodejs", "icon-postgres", "icon-script"],
+					"badges": [{
+						"icon": "icon-nodejs",
+						"title": "Node.js"
+					}, {
+						"icon": "icon-postgres",
+						"title": "Postgres"
+					}, {
+						"icon": "icon-script",
+						"title": "Bash"
+					}],
 					"date": "06/2015 - 08/2015"
 				}]
 			}, {
@@ -84,7 +93,16 @@ Site.reopenClass({
 					"isScholar": false,
 					"title": "Développeur polyvalent - <strong>Popcorn</strong>",
 					"text": "En 2014, j'ai eu la folle idée de vouloir me lancer dans un projet personnel me tenant à coeur. Avec mon frère <a>@thomasgoubin</a> nous avons développer l'idée de simplifier les systèmes de paiements dans les magasins physique, de manière à <strong>désengeorger les files d'attentes</strong>. Durant ce projet, j'ai eu l'occasion de participer à plusieurs réunion et démarchages clients, tout en étant responsable du développement technique du projet. J'ai ainsi pu développer un PoC fonctionnel du système à l'aide d'une application <strong>Android</strong> et d'un backend sur <strong>Google App Engine</strong>. Le projet c'est malheureusement terminer sur un manque d'investissement de notre part, principalement du à un manque de temps.",
-					"badges": ["icon-java", "fa-android", "icon-google-developers"],
+					"badges": [{
+						"icon": "icon-java",
+						"title": "Java"
+					}, {
+						"icon": "fa-android",
+						"title": "Android"
+					}, {
+						"icon": "icon-google-developers",
+						"title": "Google App Engine"
+					}],
 					"date": "02/2014 - 10/2014"
 				}]
 			}, {
@@ -94,7 +112,19 @@ Site.reopenClass({
 					"isScholar": true,
 					"title": "INSA Toulouse",
 					"text": "Suite à mon DUT en Informatique, j'ai pu rentrer dans le cycle <strong>ingénieur</strong> à l'INSA de Toulouse. La formation étant moins technique, je pense avoir acquis plus de connaissance et une culture relative à l'informatique en générale, me permettant d'acquérir un profil beaucoup plus <strong>polyvalent</strong> qu'aurparavant.",
-					"badges": ["icon-c", "icon-cplusplus", "icon-java", "icon-mysql", "icon-debian"],
+					"badges": [{
+						"icon": "icon-c",
+						"title": "C"
+					}, {
+						"icon": "icon-cplusplus",
+						"title": "C++"
+					}, {
+						"icon": "icon-mysql",
+						"title": "Mysql"
+					}, {
+						"icon": "icon-debian",
+						"title": "Systèmes Unix"
+					}],
 					"date": "09/2013 - Present"
 				}]
 			}, {
@@ -104,7 +134,16 @@ Site.reopenClass({
 					"isScholar": true,
 					"title": "Stage & étude en Irlande",
 					"text": "En 2013, j'ai eu l'occasion de partir pour un semestre à l'étranger, en Irlande. La bas, j'ai pu suivre des cours relatif à l'informatique (notamment aux <strong>bases de données</strong> et à <strong>l'experience utilisateurs</strong>), tout en étant en alternance dans une jeune startup irlandaise, <strong><a>SportsClinicPlus</a></strong>, ou j'ai pu faire du développement web à l'aide du framework <strong>Yii</strong>, ainsi que developper un prototype d'application <strong>Android</strong>.",
-					"badges": ["icon-php", "icon-database", "icon-java"],
+					"badges": [{
+						"icon": "icon-php",
+						"title": "PHP"
+					}, {
+						"icon": "icon-database",
+						"title": "Database"
+					}, {
+						"icon": "icon-javascript",
+						"title": "Javascript"
+					}],
 					"date": "01/2013 - 07/2013"
 				}]
 			}, {
@@ -114,7 +153,19 @@ Site.reopenClass({
 					"isScholar": false,
 					"title": "IUT A Paul Sabatier",
 					"text": "En 2011, j'ai pu effectué sur deux ans la formation <strong>Informatique de l'IUT Paul Sabatier</strong> à Toulouse. Orienté vers l'aspect technique de l'informatique, j'ai pu effectuer un focus sur plusieurs <strong>technologies</strong> et paradigmes de la programation et de l'informatique en général. Pendant ce temps la, j'ai aussi pris le temps de développer plusieurs projets personnels, et commencer à m'intéresser à la programmation Android",
-					"badges": ["icon-c", "icon-cplusplus", "icon-java", "icon-mysql"],
+					"badges": [{
+						"icon": "icon-c",
+						"title": "C"
+					}, {
+						"icon": "icon-cplusplus",
+						"title": "C++"
+					}, {
+						"icon": "icon-java",
+						"title": "Java"
+					}, {
+						"icon": "icon-mysql",
+						"title": "Mysql"
+					}],
 					"date": "09/2011 - 06/2013"
 				}]
 			}]
@@ -126,32 +177,77 @@ Site.reopenClass({
 				"title": "Popcorn",
 				"image": "images/text01.jpg",
 				"text": "Développement d'une application mobile et d'un backend web pour supprimer les files d'attentes",
-				"badges": ["fa-android", "icon-java", "icon-google-developers"]
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-java",
+					"title": "Java"
+				}, {
+					"icon": "icon-google-developers",
+					"title": "Google App Engine"
+				}]
 			}, {
 				"title": "DaVinciRoad",
 				"image": "images/text01.jpg",
 				"text": "Un site-plateforme pour regrouper et partager des photos et des infos pendant des voyages à l'étranger.",
-				"badges": ["icon-nodejs", "icon-nginx"]
+				"badges": [{
+					"icon": "icon-nodejs",
+					"title": "Node.js"
+				}, {
+					"icon": "icon-nginx",
+					"title": "Nginx"
+				}]
 			}, {
 				"title": "Habit Andro RPG",
 				"image": "images/text01.jpg",
 				"text": "Application Android liées à l'api du site web HabitRPG. Aujourd'hui récupérée comme applications officielle",
-				"badges": ["fa-android", "icon-java"]
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-java",
+					"title": "Java"
+				}]
 			}, {
 				"title": "MakeUrSport",
 				"image": "images/text01.jpg",
 				"text": "Développées dans le cadre du DUT, application sportive permettant le suivi temps réel lors d'une course.",
-				"badges": ["fa-android", "icon-java", "icon-database"]
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-java",
+					"title": "Java"
+				}, {
+					"icon": "icon-database",
+					"title": "Databases"
+				}]
 			}, {
 				"title": "Zosterops",
 				"image": "images/text01.jpg",
 				"text": "Projet tutoré à l'INSA de Toulouse, gestion à distance d'une camera pour s'immerser dans un contenu inconnu. ",
-				"badges": ["fa-android", "icon-raspberrypi"]
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-raspberrypi",
+					"title": "Raspberry Pi"
+				}]
 			}, {
 				"title": "@LaBonneMangeoire",
 				"image": "images/text01.jpg",
 				"text": "Une mangeoire connectée à un compte twitter, permettant une prise de photo d'un oiseau venant se régaler !",
-				"badges": ["icon-python", "icon-raspberrypi", "fa-twitter-square"]
+				"badges": [{
+					"icon": "icon-python",
+					"title": "Python"
+				}, {
+					"icon": "icon-raspberrypi",
+					"title": "Raspberry pi"
+				}, {
+					"icon": "fa-twitter-square",
+					"title": "API Twitter"
+				}]
 			}]
 		},
 		"contact": {},

@@ -2,7 +2,7 @@
 	<div class="card-image waves-effect waves-block waves-light">
 		<img class="activator" {{bind-attr src=model.image}}>
 		<p class="badges-mini">
-			{{#each model.badges as |current|}} <i {{bind-attr class=':fa current'}}></i> {{/each}}
+			{{#each model.badges as |current|}} <i {{bind-attr class=':fa current.icon'}} data-tooltip='{{current.title}}'></i> {{/each}}
 		</p>
 	</div>
 	<div class="card-content">
