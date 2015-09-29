@@ -1,0 +1,21 @@
+<ul id="mainbtn" class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
+	<li class="mfb-component__wrap">
+		<!-- the main menu button -->
+		<a data-mfb-label="Close" class="mfb-component__button--main">
+			<!-- the main button icon visibile by default -->
+			<i class="mfb-component__main-icon--resting fa {{model.open}}"></i>
+			<!-- the main button icon visibile when the user is hovering/interacting with the menu -->
+			<i class="mfb-component__main-icon--active fa {{model.close}}"></i>
+		</a>
+		<ul class="mfb-component__list">
+			<!-- a child button, repeat as many times as needed -->
+			{{#each model.icons as |current|}}
+			<li>
+				<a href="{{current.link}}" data-mfb-label="{{current.title}}" class="mfb-component__button--child">
+					<i class="mfb-component__child-icon fa {{current.icon}}"></i>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</li>
+</ul>

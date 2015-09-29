@@ -4,7 +4,7 @@ export default Ember.Component.extend({
 	tagName: 'div',
 	classNames: ['banner-container'],
 	_initSlider: function() {
-        $('#da-slider').cslider({
+        Ember.$('#da-slider').cslider({
         	current:0,
             autoplay: true,
             bgincrement: 0
@@ -21,9 +21,9 @@ export default Ember.Component.extend({
         // var bHeight = $(".banner-container").height();
         // console.log(bHeight);
         // $('#da-slider').height(bHeight);
-        $(window).resize(function () {
+        Ember.$(window).resize(function () {
             var bHeight = $(".banner-container").height();
-            $('#da-slider').height(bHeight);
+            Ember.$('#da-slider').height(bHeight);
         });
 	}.on('didInsertElement')
 });

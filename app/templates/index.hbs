@@ -39,76 +39,8 @@
 	{{user-portfolio model=model.portfolio}}
 </section>
 <!--Contact -->
-<section id="contactUs" class="page-section secPad">
-	<div class="container">
-		<div class="row">
-			<div class="heading text-center">
-				<!-- Heading -->
-				<h2>Hey there!</h2>
-				<p>N'hésitez pas à me contacter si vous avez un quelconque besoin (freelance ou pas), ou êtes à la recherche de stagiaire !</p>
-			</div>
-		</div>
-		<div class="row mrgn30">
-			<img>
-			<form method="post" action="" id="contactfrm" role="form">
-				<div class="col-sm-4">
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="form-group">
-						<label for="comments">Comments</label>
-						<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-					</div>
-					<button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-					<div class="result"></div>
-				</div>
-			</form>
-			<div class="col-sm-4">
-				<h4>Address:</h4>
-				<address>
-					WebThemez Company<br>
-					134 Stilla. Tae., 414515<br>
-					Leorislon, SA 02434-34534 USA
-					<br>
-				</address>
-				<h4>Phone:</h4>
-				<address>
-					12345-49589-2<br>
-				</address>
-			</div>
-		</div>
-	</div>
-	<!--/.container-->
+<section id="byebye" class="secPad">
+	{{the-end model=model.theend}}
 </section>
-<footer>
-	<div class="container">
-		<div class="social text-center">
-			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-dribbble"></i></a>
-			<a href="#"><i class="fa fa-flickr"></i></a>
-			<a href="#"><i class="fa fa-github"></i></a>
-		</div>
-		<div class="clear"></div>
-		<!--CLEAR FLOATS-->
-	</div>
-</footer>
-<!--/.page-section-->
-<section class="copyright">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				Bye bye ! - <em>Mickael</em>
-			</div>
-		</div>
-		<!-- / .row -->
-	</div>
-</section>
-<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+
+{{social-fab model=model.socials}}

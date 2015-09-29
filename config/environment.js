@@ -20,25 +20,25 @@ module.exports = function(environment) {
   };
 
   //csp
-  // ENV.contentSecurityPolicy = {
-  //   'default-src': "'none'",
-  //   'script-src': "'self' https://cdn.mxpnl.com", // Allow scripts from https://cdn.mxpnl.com
-  //   'font-src': "'self' https://fonts.gstatic.com http://fonts.gstatic.com" , // Allow fonts to be loaded from http://fonts.gstatic.com
-  //   'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-  //   'img-src': "'self' http://mickael-goubin.fr/ ",
-  //   'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com ", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
-  //   'media-src': "'self'"
-  // }
-
   ENV.contentSecurityPolicy = {
-    'default-src': "*",
-    'script-src': "* 'unsafe-eval'", // Allow scripts from https://cdn.mxpnl.com
-    'font-src': "*" , // Allow fonts to be loaded from http://fonts.gstatic.com
-    'connect-src': "*", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-    'img-src': "*",
-    'style-src': "* 'unsafe-inline' 'unsafe-eval' ", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
-    'media-src': "*"
+    'default-src': "http://www.youtube.com https://www.youtube.com",
+    'script-src': "'self' 'unsafe-eval' 127.0.0.1", // Allow scripts from https://cdn.mxpnl.com
+    'font-src': "'self' https://fonts.gstatic.com http://fonts.gstatic.com" , // Allow fonts to be loaded from http://fonts.gstatic.com
+    'connect-src': "'self'", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+    'img-src': "'self' http://mickael-goubin.fr/ ",
+    'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com ", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
+    'media-src': "'self'"
   }
+
+  // ENV.contentSecurityPolicy = {
+  //   'default-src': "*",
+  //   'script-src': "* 'unsafe-eval'", // Allow scripts from https://cdn.mxpnl.com
+  //   'font-src': "*" , // Allow fonts to be loaded from http://fonts.gstatic.com
+  //   'connect-src': "*", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+  //   'img-src': "*",
+  //   'style-src': "* 'unsafe-inline' 'unsafe-eval' ", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
+  //   'media-src': "*"
+  // }
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

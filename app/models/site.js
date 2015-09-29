@@ -6,8 +6,8 @@ var Site = DS.Model.extend({
 	quote: DS.attr(),
 	experience: DS.attr(),
 	portfolio: DS.attr(),
-	contact: DS.attr(),
-	modelafin: DS.attr()
+	socials:DS.attr(),
+	theend: DS.attr()
 });
 Site.reopenClass({
 	FIXTURES: [{
@@ -41,7 +41,7 @@ Site.reopenClass({
 			}, ],
 			"text": {
 				"title": "Développeur android & backend web",
-				"text": "Etudiant en <strong>informatique à l'INSA de Toulouse, je recherche actuellement un <strong>stage de fin d'études</strong> en informatique dans le domaine du développement mobile ou du développement backend web. J'édite par ailleurs un <a>blog technique</a> quant à mes différentes expériences liées au développements."
+				"text": "Etudiant en <strong>informatique</strong> à l'INSA de Toulouse, je recherche actuellement un <strong>stage de fin d'études</strong> en informatique dans le domaine du développement mobile ou du développement backend web. J'édite par ailleurs un <a href='http://magicmicky.github.io'>blog technique</a> quant à mes différentes expériences liées au développements."
 			},
 		},
 		"aboutUs": {
@@ -61,7 +61,7 @@ Site.reopenClass({
 			}]
 		},
 		"quote": {
-			"text": "IDK",
+			"text": "Never tell me the odds.",
 			"author": "Harrison Ford"
 		},
 		"experience": {
@@ -92,7 +92,7 @@ Site.reopenClass({
 				"events": [{
 					"isScholar": false,
 					"title": "Développeur polyvalent - <strong>Popcorn</strong>",
-					"text": "En 2014, j'ai eu la folle idée de vouloir me lancer dans un projet personnel me tenant à coeur. Avec mon frère <a>@thomasgoubin</a> nous avons développer l'idée de simplifier les systèmes de paiements dans les magasins physique, de manière à <strong>désengeorger les files d'attentes</strong>. Durant ce projet, j'ai eu l'occasion de participer à plusieurs réunion et démarchages clients, tout en étant responsable du développement technique du projet. J'ai ainsi pu développer un PoC fonctionnel du système à l'aide d'une application <strong>Android</strong> et d'un backend sur <strong>Google App Engine</strong>. Le projet c'est malheureusement terminer sur un manque d'investissement de notre part, principalement du à un manque de temps.",
+					"text": "En 2014, j'ai eu la folle idée de vouloir me lancer dans un projet personnel me tenant à coeur. Avec mon frère <a href='https://twitter.com/ThomasGoubin'>@thomasgoubin</a> nous avons développer l'idée de simplifier les systèmes de paiements dans les magasins physique, de manière à <strong>désengeorger les files d'attentes</strong>. Durant ce projet, j'ai eu l'occasion de participer à plusieurs réunion et démarchages clients, tout en étant responsable du développement technique du projet. J'ai ainsi pu développer un PoC fonctionnel du système à l'aide d'une application <strong>Android</strong> et d'un backend sur <strong>Google App Engine</strong>. Le projet c'est malheureusement terminer sur un manque d'investissement de notre part, principalement du à un manque de temps.",
 					"badges": [{
 						"icon": "icon-java",
 						"title": "Java"
@@ -133,7 +133,7 @@ Site.reopenClass({
 				"events": [{
 					"isScholar": true,
 					"title": "Stage & étude en Irlande",
-					"text": "En 2013, j'ai eu l'occasion de partir pour un semestre à l'étranger, en Irlande. La bas, j'ai pu suivre des cours relatif à l'informatique (notamment aux <strong>bases de données</strong> et à <strong>l'experience utilisateurs</strong>), tout en étant en alternance dans une jeune startup irlandaise, <strong><a>SportsClinicPlus</a></strong>, ou j'ai pu faire du développement web à l'aide du framework <strong>Yii</strong>, ainsi que developper un prototype d'application <strong>Android</strong>.",
+					"text": "En 2013, j'ai eu l'occasion de partir pour un semestre à l'étranger, en Irlande. La bas, j'ai pu suivre des cours relatif à l'informatique (notamment aux <strong>bases de données</strong> et à <strong>l'experience utilisateurs</strong>), tout en étant en alternance dans une jeune startup irlandaise, <strong><a href='https://salaso.com/'>Salaso</a></strong>, ou j'ai pu faire du développement web à l'aide du framework <strong>Yii</strong>, ainsi que developper un prototype d'application <strong>Android</strong>.",
 					"badges": [{
 						"icon": "icon-php",
 						"title": "PHP"
@@ -175,7 +175,7 @@ Site.reopenClass({
 			"text": "Des projets en veux-tu en voilà ! <em>La plupart de ces projets ont été réalisés en équipe.</em>",
 			"projects": [{
 				"title": "Popcorn",
-				"image": "images/text01.jpg",
+				"image": "images/portfolio/popcorn1.png",
 				"text": "Développement d'une application mobile et d'un backend web pour supprimer les files d'attentes",
 				"badges": [{
 					"icon": "fa-android",
@@ -189,8 +189,9 @@ Site.reopenClass({
 				}]
 			}, {
 				"title": "DaVinciRoad",
-				"image": "images/text01.jpg",
+				"image": "images/portfolio/davinciroad/1.png",
 				"text": "Un site-plateforme pour regrouper et partager des photos et des infos pendant des voyages à l'étranger.",
+				"link":"http://davinciroad.it",
 				"badges": [{
 					"icon": "icon-nodejs",
 					"title": "Node.js"
@@ -200,8 +201,9 @@ Site.reopenClass({
 				}]
 			}, {
 				"title": "Habit Andro RPG",
-				"image": "images/text01.jpg",
+				"image": "images/portfolio/habitrpg.webp",
 				"text": "Application Android liées à l'api du site web HabitRPG. Aujourd'hui récupérée comme applications officielle",
+				"link": "https://play.google.com/store/apps/details?id=com.magicmicky.habitrpgmobileapp",
 				"badges": [{
 					"icon": "fa-android",
 					"title": "Android"
@@ -211,8 +213,10 @@ Site.reopenClass({
 				}]
 			}, {
 				"title": "MakeUrSport",
-				"image": "images/text01.jpg",
+				"image": "https://www.youtube.com/embed/OyMJaEzCo2E",
+				"imageIsYoutube":true,
 				"text": "Développées dans le cadre du DUT, application sportive permettant le suivi temps réel lors d'une course.",
+				"link": "https://play.google.com/store/apps/details?id=com.makeursport",
 				"badges": [{
 					"icon": "fa-android",
 					"title": "Android"
@@ -225,8 +229,9 @@ Site.reopenClass({
 				}]
 			}, {
 				"title": "Zosterops",
-				"image": "images/text01.jpg",
+				"image": "images/portfolio/ptut.jpg",
 				"text": "Projet tutoré à l'INSA de Toulouse, gestion à distance d'une camera pour s'immerser dans un contenu inconnu. ",
+				"link": "https://github.com/Zosterops/",
 				"badges": [{
 					"icon": "fa-android",
 					"title": "Android"
@@ -235,9 +240,10 @@ Site.reopenClass({
 					"title": "Raspberry Pi"
 				}]
 			}, {
-				"title": "@LaBonneMangeoire",
-				"image": "images/text01.jpg",
+				"title": "@BonneMangeoire",
+				"image": "images/portfolio/labonnemangeoire2.jpg",
 				"text": "Une mangeoire connectée à un compte twitter, permettant une prise de photo d'un oiseau venant se régaler !",
+				"link": "http://twitter.com/BonneMangeoire",
 				"badges": [{
 					"icon": "icon-python",
 					"title": "Python"
@@ -250,8 +256,32 @@ Site.reopenClass({
 				}]
 			}]
 		},
-		"contact": {},
-		"motdelafin": "Bye bye ! - <em>Mickael</em"
+		"socials": {
+			open: "fa-thumbs-o-up",
+			close: "fa-times",
+			icons: [{
+				"title":"Twitter",
+				"icon": "fa-twitter",
+				"link": "https://twitter.com/MagicMicky"
+			},{
+				"title":"GitHub",
+				"icon": "fa-github",
+				"link": "https://github.com/MagicMicky"
+			},{
+				"title":"Linkedin",
+				"icon": "fa-linkedin",
+				"link": "https://fr.linkedin.com/in/mgoubin"
+			},{
+				"title":"StackOverflow",
+				"icon": "fa-stack-overflow",
+				"link": "http://stackoverflow.com/users/1376834/magicmicky"
+			}],
+		},
+		"theend": {
+			"picture": "/images/itsmemario.jpeg",
+			"title":"Mais encore !",
+			"text":"Adepte de séries tv (particulièrement de SF), même que des fois je donne <a href='http://www.senscritique.com/MagicMicky'>des notes</a> (mais je suis gentil quand même). Membre du <a href='http://toulouseaug.blogspot.fr/''>Toulouse Android User Group</a>, j'ai des articles publiées dans Android Weekly (<a href='http://androidweekly.net/issues/issue-111'>#1</a>, <a href='http://androidweekly.net/issues/issue-113'>#2</a>), j'aime bien <a href='http://open.spotify.com/user/magic-micky'>écouter de la musique</a>, jouer à certains jeux vidéos. J'ai même un <a class='fancybox' rel='gal1' href='images/chat1.jpg'>petit chat</a> (<a class='fancybox' rel='gal1' href='images/chat2.jpg'>#hearmeroar</a>)!"
+		}
 	}]
 });
 export default Site;

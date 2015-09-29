@@ -1,12 +1,31 @@
 <div class="card medium">
 	<div class="card-image waves-effect waves-block waves-light">
-		<img class="activator" {{bind-attr src=model.image}}>
+		{{#if model.imageIsYoutube}}
+		<iframe width="100%" class="youtube-image" src="{{model.image}}" frameborder="0" allowfullscreen="true"></iframe>
+		{{else}}
+		<a class="fancybox" href="{{model.image}}" data-title="{{model.title}}">
+			<img class="activator" src="{{model.image}}">
+		</a>
+		{{/if}}
 		<p class="badges-mini">
-			{{#each model.badges as |current|}} <i {{bind-attr class=':fa current.icon'}} data-tooltip='{{current.title}}'></i> {{/each}}
+			{{#each model.badges as |current|}} <i class='fa fa-changing {{current.icon}}' data-tooltip='{{current.title}}'></i> {{/each}}
 		</p>
 	</div>
 	<div class="card-content">
-		<span class="card-title activator grey-text text-darken-4">{{model.title}}</span>
+		{{#if model.link }}
+			<span class="card-title activator grey-text text-darken-4">
+				<a href="{{model.link}}">
+				{{model.title}}
+				<i class="fa link-icon fa-external-link"></i>
+				</a>
+			</span>
+		{{else }}
+			<span class="card-title activator grey-text text-darken-4">
+				{{model.title}}
+			</span>
+
+		{{/if}}
+		
 		<p>{{{model.text}}}</p>
 	</div>
 </div>

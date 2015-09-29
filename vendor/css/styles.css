@@ -697,7 +697,8 @@ display: inherit;
 }
 
 #portfolio {
-    background:url('../images/background.jpg');
+    background:url('../images/background.jpg') top center no-repeat;
+    background-size: auto 100%;
 }
 
     #portfolio img {
