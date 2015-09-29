@@ -280,7 +280,7 @@ Site.reopenClass({
 		"theend": {
 			"picture": "/images/itsmemario.jpeg",
 			"title":"Mais encore !",
-			"text":"Adepte de séries tv (particulièrement de SF), même que des fois je donne <a href='http://www.senscritique.com/MagicMicky'>des notes</a> (mais je suis gentil quand même). Membre du <a href='http://toulouseaug.blogspot.fr/''>Toulouse Android User Group</a>, j'ai des articles publiées dans Android Weekly (<a href='http://androidweekly.net/issues/issue-111'>#1</a>, <a href='http://androidweekly.net/issues/issue-113'>#2</a>), j'aime bien <a href='http://open.spotify.com/user/magic-micky'>écouter de la musique</a>, jouer à certains jeux vidéos. J'ai même un <a class='fancybox' rel='gal1' href='images/chat1.jpg'>petit chat</a> (<a class='fancybox' rel='gal1' href='images/chat2.jpg'>#hearmeroar</a>)!"
+			"text":"Adepte de séries tv (particulièrement de SF), même que des fois je donne <a href='http://www.senscritique.com/MagicMicky'>des notes</a> (mais je suis gentil quand même). Membre du <a href='http://toulouseaug.blogspot.fr/''>Toulouse Android User Group</a>, j'ai des articles publiées dans Android Weekly (<a href='http://androidweekly.net/issues/issue-111'>#1</a>, <a href='http://androidweekly.net/issues/issue-113'>#2</a>), j'aime bien <a href='http://open.spotify.com/user/magic-micky'>écouter de la musique</a>, jouer à certains jeux vidéos. J'ai même un <a class='fancybox' rel='gal1' href='images/chat1.jpg'>petit chat</a> (<a class='fancybox' rel='gal1' href='images/chat2.jpg'>#hearmeroar</a>)! Oh, et ce site est complètement <a href='https://github.com/MagicMicky/personnal_website'>Open Source</a> !"
 		}
 	}]
 });
