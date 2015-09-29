@@ -24,9 +24,6 @@ Site.reopenClass({
 		}, {
 			"link": "portfolio",
 			"text": "Portfolio"
-		}, {
-			"link": "contact",
-			"text": "Contact"
 		}],
 		"intro": {
 			"slider": [{
