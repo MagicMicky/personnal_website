@@ -279,6 +279,275 @@ Site.reopenClass({
 			"title":"Mais encore !",
 			"text":"Adepte de séries tv (particulièrement de SF), même que des fois je donne <a href='http://www.senscritique.com/MagicMicky'>des notes</a> (mais je suis gentil quand même). Membre du <a href='http://toulouseaug.blogspot.fr/''>Toulouse Android User Group</a>, j'ai des articles publiées dans Android Weekly (<a href='http://androidweekly.net/issues/issue-111'>#1</a>, <a href='http://androidweekly.net/issues/issue-113'>#2</a>), j'aime bien <a href='http://open.spotify.com/user/magic-micky'>écouter de la musique</a>, jouer à certains jeux vidéos. J'ai même un <a class='fancybox' rel='gal1' href='images/chat1.jpg'>petit chat</a> (<a class='fancybox' rel='gal1' href='images/chat2.jpg'>#hearmeroar</a>)! Oh, et ce site est complètement <a href='https://github.com/MagicMicky/personnal_website'>Open Source</a> !"
 		}
+	}, {
+		"id": 2,
+		"nav": [{
+			"link": "home",
+			"text": "Home"
+		}, {
+			"link": "aboutUs",
+			"text": "About me"
+		}, {
+			"link": "experience",
+			"text": "Experiences"
+		}, {
+			"link": "portfolio",
+			"text": "Portfolio"
+		}],
+		"intro": {
+				"slider": [{
+					"title": "Android Ninja",
+					"text": "Development of multiple Android application."
+				}, {
+					"title": "Node.js enthusiast",
+					"text": "Web backend developpement using Node.js."
+				}, {
+					"title": "UI/UX focus",
+					"text": "When working on front-end solution, I believe you should absolutely focus on UI/UX design."
+				}, ],
+				"text": {
+					"title": "Android &amp; backend developper",
+					"text": "<strong>Software Engineering</strong> student in INSA of Toulouse. I'm currently looking for a <strong>post-graduate internship</strong> in mobile app/backend developpement. I also own a <a href='http://magicmicky.github.io'>technical blog</a>, to talk about my developpement experiences."
+				},
+			},
+		"aboutUs": {
+			"title": "Ready for some action?",
+			"skills": [{
+				"icon": "fa-android",
+				"title": " <span class='id-color'>Android</span> Developpement",
+				"text": "I learned <strong>Android</strong> developpement through projects that lead me to some expertise in this field."
+			}, {
+				"icon": "icon-nodejs",
+				"title": "Developpement <span class='id-color'>Node.js</span>",
+				"text": "I quite enjoy <strong>Node.js</strong> for its fiability, speed, and asynchronous flow control. Some great points for backend development!"
+			}, {
+				"icon": "fa-github",
+				"title": "<span class='id-color'>Open Source</span></h3> is awesome",
+				"text": "I've always been found of <strong>Open Source</strong> projects. You can even find some on my <a href='http://github.com/MagicMicky'>GitHub</a>"
+			}]
+		},
+		"quote": {
+			"text": "Never tell me the odds.",
+			"author": "Harrison Ford"
+		},
+		"experience": {
+			"title": "Professional experiences",
+			"text": "You can call it jobs.",
+			"timeline": [{
+				"month": "Jun",
+				"year": "2015",
+				"events": [{
+					"isScholar": false,
+					"title": "Web developper (intern) - <strong>Payname</strong>",
+					"text": "On my postgraduate degree, in the INSA of Toulouse, I managed to find a job in an awesome startup : Payname. Payname, a yound fintech that facilitate paiement between individuals had decided to change the totality of their services. Thanks to this intership, I managed to get involved in the production phase of the new website.",
+					"badges": [{
+						"icon": "icon-nodejs",
+						"title": "Node.js"
+					}, {
+						"icon": "icon-postgres",
+						"title": "Postgres"
+					}, {
+						"icon": "icon-script",
+						"title": "Bash"
+					}],
+					"date": "06/2015 - 08/2015"
+				}]
+			}, {
+				"month": "Mai",
+				"year": "2014",
+				"events": [{
+					"isScholar": false,
+					"title": "Versatile developer - <strong>Popcorn</strong>",
+					"text": "In 2014 I had the crazy idea to focus my mind on a personnal project dear to my heart. With my brother <a href='https://twitter.com/ThomasGoubin'>@ThomasGoubin</a> we wanted to create a system that would simplify paiements in physical shops, so that we could <strong>reduce waiting time</strong> in queues. During this project, I got involved in multiple meetings and in identifying potential customers. But most of all, I was in charge of all the technical development of the project. I created a functionnal PoC in the form of an <strong>Android</strong> application and a Java backend, hosted on <strong>Google Cloud Endpoints</strong>. Unfortunately, the project ended because of a lack of invetment from our end, mostly due to a lack fo time.",
+					"badges": [{
+						"icon": "icon-java",
+						"title": "Java"
+					}, {
+						"icon": "fa-android",
+						"title": "Android"
+					}, {
+						"icon": "icon-google-developers",
+						"title": "Google App Engine"
+					}],
+					"date": "02/2014 - 10/2014"
+				}]
+			}, {
+				"month": "Sep",
+				"year": "2013",
+				"events": [{
+					"isScholar": true,
+					"title": "INSA Toulouse",
+					"text": "Following my DUT in Informatique, I managed to get into the engineering school called INSA of Toulouse, majoring in Software engineering. This formation let me acquire quite some knowledge about Computer Science paradigmes and patterns. I believe that thanks to this formation, I have acquired a more <strong>versatile</strong> profile.",
+					"badges": [{
+						"icon": "icon-c",
+						"title": "C"
+					}, {
+						"icon": "icon-cplusplus",
+						"title": "C++"
+					}, {
+						"icon": "icon-mysql",
+						"title": "Mysql"
+					}, {
+						"icon": "icon-debian",
+						"title": "Systèmes Unix"
+					}],
+					"date": "09/2013 - Present"
+				}]
+			}, {
+				"month": "Jan",
+				"year": "2013",
+				"events": [{
+					"isScholar": true,
+					"title": "Internship & studies in Ireland",
+					"text": "In 2013 I managed to spend a whole semester in Ireland. This semester was quite original, because I was able to follow some courses relative to Computer Science (such as an <strong>advanced database</strong> course, and an <strong>User Experience</strong> oriented one) while working, two days a week, in a young irish startup named <strong><a href='https://salaso.com/'>Salaso</a></strong>. During this internship, I worked as a web developper using the <strong>Yii</strong framework. I also were able to work on a prototype of an <strong>Android</strong> application.",
+					"badges": [{
+						"icon": "icon-php",
+						"title": "PHP"
+					}, {
+						"icon": "icon-database",
+						"title": "Database"
+					}, {
+						"icon": "icon-javascript",
+						"title": "Javascript"
+					}],
+					"date": "01/2013 - 07/2013"
+				}]
+			}, {
+				"month": "Sep",
+				"year": "2011",
+				"events": [{
+					"isScholar": false,
+					"title": "DUT in Computer Science",
+					"text": "In 2011, I started a two year, undergraduate formation comparable to an Associate Degree in Computer Science. Dedicated to the technical aspect of Computer Science, I managed to work with a few interesting technologies, that were quite interesting. During this time, I also were able to work on some personnal projects, and getting interesting in Android development.",
+					"badges": [{
+						"icon": "icon-c",
+						"title": "C"
+					}, {
+						"icon": "icon-cplusplus",
+						"title": "C++"
+					}, {
+						"icon": "icon-java",
+						"title": "Java"
+					}, {
+						"icon": "icon-mysql",
+						"title": "Mysql"
+					}],
+					"date": "09/2011 - 06/2013"
+				}]
+			}]
+		},
+		"portfolio": {
+			"title": "Portfolio",
+			"text": "Here comes some projects! <em>Note that most of those projects were realised as a team.</em>",
+			"projects": [{
+				"title": "Popcorn",
+				"image": "images/portfolio/popcorn1.png",
+				"text": "Development of a mobile application, using a web backend to remove queuing in physical shops!",
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-java",
+					"title": "Java"
+				}, {
+					"icon": "icon-google-developers",
+					"title": "Google App Engine"
+				}]
+			}, {
+				"title": "DaVinciRoad",
+				"image": "images/portfolio/davinciroad/1.png",
+				"text": "A platform to share and gather memories and information when visiting a country, or on trip abroad.",
+				"link":"http://davinciroad.it",
+				"badges": [{
+					"icon": "icon-nodejs",
+					"title": "Node.js"
+				}, {
+					"icon": "icon-nginx",
+					"title": "Nginx"
+				}]
+			}, {
+				"title": "Habit Andro RPG",
+				"image": "images/portfolio/habitrpg.webp",
+				"text": "Android application using the HabitRPG API. Soon to become HabitRPG official Android Application",
+				"link": "https://play.google.com/store/apps/details?id=com.magicmicky.habitrpgmobileapp",
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-java",
+					"title": "Java"
+				}]
+			}, {
+				"title": "MakeUrSport",
+				"image": "https://www.youtube.com/embed/OyMJaEzCo2E",
+				"imageIsYoutube":true,
+				"text": "Developped during my DUT, this is an Android application that allows real time tracking of a run",
+				"link": "https://play.google.com/store/apps/details?id=com.makeursport",
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-java",
+					"title": "Java"
+				}, {
+					"icon": "icon-database",
+					"title": "Databases"
+				}]
+			}, {
+				"title": "Zosterops",
+				"image": "images/portfolio/ptut.jpg",
+				"text": "Let you control a camera thanks to a Google Cardboard, and let you immerse yourself in a distant environment.", 
+				"link": "https://github.com/Zosterops/",
+				"badges": [{
+					"icon": "fa-android",
+					"title": "Android"
+				}, {
+					"icon": "icon-raspberrypi",
+					"title": "Raspberry Pi"
+				}]
+			}, {
+				"title": "@BonneMangeoire",
+				"image": "images/portfolio/labonnemangeoire2.jpg",
+				"text": "A connected bird feeding device, linked to a twitter account that allows the taking of a picture that want to taste some treats!",
+				"link": "http://twitter.com/BonneMangeoire",
+				"badges": [{
+					"icon": "icon-python",
+					"title": "Python"
+				}, {
+					"icon": "icon-raspberrypi",
+					"title": "Raspberry pi"
+				}, {
+					"icon": "fa-twitter-square",
+					"title": "API Twitter"
+				}]
+			}]
+		},
+		"socials": {
+			"open": "fa-thumbs-o-up",
+			"close": "fa-times",
+			"icons": [{
+				"title":"Twitter",
+				"icon": "fa-twitter",
+				"link": "https://twitter.com/MagicMicky"
+			},{
+				"title":"GitHub",
+				"icon": "fa-github",
+				"link": "https://github.com/MagicMicky"
+			},{
+				"title":"Linkedin",
+				"icon": "fa-linkedin",
+				"link": "https://fr.linkedin.com/in/mgoubin"
+			},{
+				"title":"StackOverflow",
+				"icon": "fa-stack-overflow",
+				"link": "http://stackoverflow.com/users/1376834/magicmicky"
+			}],
+		},
+		"theend": {
+			"picture": "/images/itsmemario.jpeg",
+			"title":"Wait, there's more!",
+			"text": "TV addict (mostly SciFi), I sometimes try to <a href='http://www.senscritique.com/MagicMicky'>note</a> shows (but I'm easily entertained) Member of the <a href='http://toulouseaug.blogspot.fr/''>Toulouse Android User Group</a>, I have some articles published in Android Weekly (<a href='http://androidweekly.net/issues/issue-111'>#1</a>, <a href='http://androidweekly.net/issues/issue-113'>#2</a>), I like <a href='http://open.spotify.com/user/magic-micky'>listening to music</a>, and playing some video games. I even got a <a class='fancybox' rel='gal1' href='images/chat1.jpg'>kitty cat</a> (<a class='fancybox' rel='gal1' href='images/chat2.jpg'>#hearmeroar</a>)! Oh, and this website is fully <a href='https://github.com/MagicMicky/personnal_website'>Open Source</a> !"
+		}
 	}]
 });
 export default Site;
