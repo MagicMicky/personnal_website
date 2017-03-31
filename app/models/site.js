@@ -296,30 +296,30 @@ Site.reopenClass({
 		}],
 		"intro": {
 				"slider": [{
-					"title": "Android Ninja",
-					"text": "Development of multiple Android application."
-				}, {
-					"title": "Node.js enthusiast",
+					"title": "Node.js developer",
 					"text": "Web backend developpement using Node.js."
 				}, {
-					"title": "UI/UX focus",
-					"text": "When working on front-end solution, I believe you should absolutely focus on UI/UX design."
+					"title": "Microservices advocate",
+					"text": "Using microservices helps reliability and scalability."
+				}, {
+					"title": "Docker enthusiast",
+					"text": "Deploying, easily."
 				}, ],
 				"text": {
-					"title": "Android &amp; backend developper",
-					"text": "<strong>Software Engineering</strong> student in INSA of Toulouse. I'm currently looking for a <strong>post-graduate internship</strong> in mobile app/backend developpement. I also own a <a href='http://magicmicky.github.io'>technical blog</a>, to talk about my developpement experiences."
+					"title": "Infrastructure & backend Engineer",
+					"text": "<strong>Software Engineer</strong>, mostly found of Infrastructure related development. I've been working for the past few years with <strong>Node.js</strong> and <strong>Docker</strong>, to make developers life easier. I also own a <a href='http://magicmicky.github.io'>technical blog</a>, to talk about my developpement experiences."
 				},
 			},
 		"aboutUs": {
 			"title": "Ready for some action?",
 			"skills": [{
-				"icon": "fa-android",
-				"title": " <span class='id-color'>Android</span> Developpement",
-				"text": "I learned <strong>Android</strong> developpement through projects that lead me to some expertise in this field."
-			}, {
 				"icon": "icon-nodejs",
-				"title": "Developpement <span class='id-color'>Node.js</span>",
-				"text": "I quite enjoy <strong>Node.js</strong> for its fiability, speed, and asynchronous flow control. Some great points for backend development!"
+				"title": " <span class='id-color'>Node.js</span> developpement",
+				"text": "I enjoy <strong>Node.js</strong> for its functionnal oriented features and i/o workflow. Some great points for backend development!"
+			}, {
+				"icon": "fa-docker",
+				"title": "<span class='id-color'>Automate</span> all the thingz",
+				"text": "I found <strong>Docker</strong> to be amazing to <strong>automate</strong> deployment via its API, and ease development!"
 			}, {
 				"icon": "fa-github",
 				"title": "<span class='id-color'>Open Source</span></h3> is awesome",
@@ -334,12 +334,53 @@ Site.reopenClass({
 			"title": "Professional experiences",
 			"text": "You can call it jobs.",
 			"timeline": [{
+				"month": "Jul",
+				"year": "2016",
+				"events": [{
+					"isScholar": false,
+					"title": "Automation Engineer - <strong>Morning</strong>",
+					"text": "After my internship at Payname, the company changed its name to <strong>Morning</strong>. I was hired to continue working on our Microservice development kit, and our CD solution, but go even deeper. I focused on our <strong>infrastructure oriented microservices</strong>, and tried to make developers and sysadmins lives better!",
+					"badges": [{
+						"icon": "fa-docker",
+						"title": "Docker"
+					}, {
+						"icon": "icon-nodejs",
+						"title": "Node.js"
+					}, {
+						"icon": "icon-script",
+						"title": "Bash"
+					}],
+					"date": "02/2016 - 07/2016"
+				}]
+			}, {
+				"month": "Feb",
+				"year": "2016",
+				"events": [{
+					"isScholar": false,
+					"title": "Infrastructure developer (intern) - <strong>Payname</strong>",
+					"text": "On a second internship at Payname, I had to work on our <strong>Microservice Development kit</strong>. I mainly focused on implementing a <strong>RabbitMQ</strong> based communication protocol, while also working on building our <strong>continuous delivery</strong> solution, adapted to our payment and <strong>neobanking</strong> solution. To achieve this, I designed an architecture, and implemented several tools, to help us develop, use, and monitor this CD solution.",
+					"badges": [{
+						"icon": "fa-docker",
+						"title": "Docker"
+					}, {
+						"icon": "icon-nodejs",
+						"title": "Node.js"
+					}, {
+						"icon": "icon-postgres",
+						"title": "Postgres"
+					}, {
+						"icon": "icon-script",
+						"title": "Bash"
+					}],
+					"date": "02/2016 - 07/2016"
+				}]
+			}, {
 				"month": "Jun",
 				"year": "2015",
 				"events": [{
 					"isScholar": false,
-					"title": "Web developper (intern) - <strong>Payname</strong>",
-					"text": "On my postgraduate degree, in the INSA of Toulouse, I managed to find a job in an awesome startup : Payname. Payname, a yound fintech that facilitate paiement between individuals had decided to change the totality of their services. Thanks to this intership, I managed to get involved in the production phase of the new website.",
+					"title": "Backend Web developper (intern) - <strong>Payname</strong>",
+					"text": "\tPayname was a yound fintech that make paiement between people easier. I created a <strong>Node.js</strong> service that handles paiements on the different website we had <em>(credit card via a third party provider, iban as sepa wire transfer)</em>. I was also involved in the implementation and design of a fraud detection algorithm.",
 					"badges": [{
 						"icon": "icon-nodejs",
 						"title": "Node.js"
@@ -377,7 +418,7 @@ Site.reopenClass({
 				"events": [{
 					"isScholar": true,
 					"title": "INSA Toulouse",
-					"text": "Following my DUT in Informatique, I managed to get into the engineering school called INSA of Toulouse, majoring in Software engineering. This formation let me acquire quite some knowledge about Computer Science paradigmes and patterns. I believe that thanks to this formation, I have acquired a more <strong>versatile</strong> profile.",
+					"text": "Following my DUT in Informatique, I managed to get into the engineering school called INSA of Toulouse, majoring in <strong>Software engineering</strong> with a <strong>Cloud</strong> oriented minor. This formation let me acquire quite some knowledge about Computer Science paradigms and patterns. I believe that thanks to this formation, I have acquired a more <strong>versatile</strong> profile.",
 					"badges": [{
 						"icon": "icon-c",
 						"title": "C"
@@ -389,7 +430,7 @@ Site.reopenClass({
 						"title": "Mysql"
 					}, {
 						"icon": "icon-debian",
-						"title": "Systèmes Unix"
+						"title": "Unix"
 					}],
 					"date": "09/2013 - Present"
 				}]
@@ -399,7 +440,7 @@ Site.reopenClass({
 				"events": [{
 					"isScholar": true,
 					"title": "Internship & studies in Ireland",
-					"text": "In 2013 I managed to spend a whole semester in Ireland. This semester was quite original, because I was able to follow some courses relative to Computer Science (such as an <strong>advanced database</strong> course, and an <strong>User Experience</strong> oriented one) while working, two days a week, in a young irish startup named <strong><a href='https://salaso.com/'>Salaso</a></strong>. During this internship, I worked as a web developper using the <strong>Yii</strong framework. I also were able to work on a prototype of an <strong>Android</strong> application.",
+					"text": "In 2013 I managed to spend a whole semester in Ireland. This semester was quite original, because I was able to follow some courses relative to Computer Science (such as an <strong>advanced database</strong> course, and an <strong>User Experience</strong> oriented one) while working, two days a week, in a young irish startup named <strong><a href='https://salaso.com/'>Salaso</a></strong>. During this internship, I worked as a web developper using the <strong>Yii</strong> framework. I also were able to work on a prototype of an <strong>Android</strong> application.",
 					"badges": [{
 						"icon": "icon-php",
 						"title": "PHP"
@@ -416,9 +457,9 @@ Site.reopenClass({
 				"month": "Sep",
 				"year": "2011",
 				"events": [{
-					"isScholar": false,
+					"isScholar": true,
 					"title": "DUT in Computer Science",
-					"text": "In 2011, I started a two year, undergraduate formation comparable to an Associate Degree in Computer Science. Dedicated to the technical aspect of Computer Science, I managed to work with a few interesting technologies, that were quite interesting. During this time, I also were able to work on some personnal projects, and getting interesting in Android development.",
+					"text": "In 2011, I started a two year, undergraduate formation comparable to an Associate Degree in Computer Science. Dedicated to the technical aspect of Computer Science, I managed to work with a few interesting technologies and enjoyed working on some personnal projects.",
 					"badges": [{
 						"icon": "icon-c",
 						"title": "C"
@@ -468,8 +509,8 @@ Site.reopenClass({
 			}, {
 				"title": "Habit Andro RPG",
 				"image": "images/portfolio/habitrpg.webp",
-				"text": "Android application using the HabitRPG API. Soon to become HabitRPG official Android Application",
-				"link": "https://play.google.com/store/apps/details?id=com.magicmicky.habitrpgmobileapp",
+				"text": "Android application using the HabitRPG API, sold in 2015 to become the official android application.",
+				"link": "https://play.google.com/store/apps/details?id=com.habitrpg.android.habitica",
 				"badges": [{
 					"icon": "fa-android",
 					"title": "Android"

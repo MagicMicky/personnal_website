@@ -22,7 +22,7 @@ export default Ember.Component.extend({
         // console.log(bHeight);
         // $('#da-slider').height(bHeight);
         Ember.$(window).resize(function () {
-            var bHeight = $(".banner-container").height();
+            var bHeight = Ember.$(".banner-container").height();
             Ember.$('#da-slider').height(bHeight);
         });
 	}.on('didInsertElement')
