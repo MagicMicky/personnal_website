@@ -564,8 +564,8 @@ Site.reopenClass({
 			}]
 		},
 		"socials": {
-			"open": "fa-thumbs-o-up",
-			"close": "fa-times",
+			"open": "fa-envelope",
+			"close": "fa-envelope-open",
 			"icons": [{
 				"title":"Twitter",
 				"icon": "fa-twitter",
