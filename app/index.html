@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{content-for 'head'}}
+    {{content-for "head"}}
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -22,30 +22,26 @@
     <!-- Owl Carousel Assets -->
     <!-- <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"> -->
     <!-- Font Awesome -->
-    <link href="font/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font/font-mfizz/font-mfizz.css">
-    <link rel="stylesheet" href="font/css/font-mfizz.css">
-    <link rel="stylesheet" href="font/fontcustom/fontcustom.css">
+    <link href="{{rootURL}}font/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{rootURL}}font/font-mfizz/font-mfizz.css">
+    <link rel="stylesheet" href="{{rootURL}}font/fontcustom/fontcustom.css">
 
     <!-- Roboto -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,400,300,700,100' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/mickaelgoubin.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/mickaelgoubin.css">
 
-
-    {{content-for 'head-footer'}}
+    {{content-for "head-footer"}}
   </head>
   <body>
-    {{content-for 'body'}}
-    
-    {{content-for 'body-footer'}}
+    {{content-for "body"}}
 
+    {{content-for "body-footer"}}
     <script src="assets/vendor.js"></script>
     <script src="assets/mickaelgoubin.js"></script>
     <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-<!--       <script src="js/bootstrap.min.js" type="text/javascript"></script>
--->  
+<!--       <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
     <!--
     <script src="js/modernizr-latest.js"></script>
     <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>

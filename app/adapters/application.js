@@ -1,3 +1,11 @@
-import DS from 'ember-data';
+import FixtureAdapter from 'ember-data-fixture-adapter';
 
-export default DS.FixtureAdapter.extend({defaultSerializer: "-default"});
+export default FixtureAdapter.extend({
+  findRecord(store, typeClass, id) {
+    return this.find(store, typeClass, id);
+  },
+
+  query(store, typeClass, query) {
+    return this.findQuery(store, typeClass, query);
+  }
+});

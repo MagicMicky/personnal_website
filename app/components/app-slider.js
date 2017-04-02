@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	tagName: 'div',
-	classNames: ['banner-container'],
-	_initSlider: function() {
+    tagName: 'div',
+    classNames: ['banner-container'],
+    _initSlider: function() {
         Ember.$('#da-slider').cslider({
-        	current:0,
+            current:0,
             autoplay: true,
             bgincrement: 0
         });
@@ -25,5 +25,5 @@ export default Ember.Component.extend({
             var bHeight = Ember.$(".banner-container").height();
             Ember.$('#da-slider').height(bHeight);
         });
-	}.on('didInsertElement')
+    }.on('didInsertElement')
 });
