@@ -1,4 +1,4 @@
-FROM node:boron AS buildhtml
+FROM node:boron
 RUN npm install -g bower
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -15,4 +15,5 @@ RUN npm run build
 
 FROM pierrezemb/gostatic
 WORKDIR /srv/http
-COPY —-from=buildhtml /usr/src/app/dist /srv/http
+EXPOSE 8043
+COPY --from=0 /usr/src/app/dist /srv/http
